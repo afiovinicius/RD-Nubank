@@ -1,0 +1,167 @@
+header {
+  padding: 2.4rem 0rem;
+  width: 100%;
+  height: 8.8rem;
+  .container {
+    @include flex(row, nowrap, center, space-between);
+    ul {
+      @include flex(row, nowrap, center, flex-start);
+      gap: 4.8rem;
+      li {
+        color: #820ad1;
+        a {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 120%;
+          letter-spacing: -0.05em;
+          color: rgba(30, 30, 30, 0.8);
+          transition: all 0.3s ease-in;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.2rem;
+            left: auto;
+            right: 0;
+            width: 0;
+            height: 0.2rem;
+            background: #820ad1;
+            transition: all 0.3s ease-in;
+          }
+          &:hover {
+            color: rgba(30, 30, 30, 1);
+            &::after {
+              content: "";
+              left: 0;
+              right: auto;
+              width: 100%;
+              transition: all 0.3s ease-in;
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      max-width: 7.4rem;
+      height: 4rem;
+      transition: all 0.3s ease-in;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .btn {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 120%;
+      letter-spacing: -0.05em;
+      background: linear-gradient(256.1deg, #820ad1 53.6%, #39005f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      .icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        opacity: 0.8;
+        .icon {
+          transition: all 0.3s ease-in-out;
+          transform: translateX(-0.8rem);
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 66.2rem;
+  padding: 7.2rem 0rem;
+  .container {
+    @include flex(row, nowrap, center, space-between);
+    padding: 0rem 17.8rem;
+    gap: 0.8rem;
+    .text {
+      width: 100%;
+      max-width: 41.6rem;
+      h1,
+      b {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 6.4rem;
+        line-height: 120%;
+        letter-spacing: -0.05em;
+      }
+      b {
+        background: linear-gradient(256.1deg, #820ad1 53.6%, #39005f 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+      h4 {
+        margin-top: 2.4rem;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 120%;
+        letter-spacing: -0.05em;
+        color: #4d5766;
+      }
+    }
+    .illust {
+      width: 42rem;
+      height: 51.6rem;
+      position: relative;
+      .cardleft {
+        position: absolute;
+        width: 30.241rem;
+        height: 28.347rem;
+        left: 0rem;
+        top: 23.3rem;
+        animation: cardleftpulse 3s ease-in infinite;
+      }
+      @keyframes cardleftpulse {
+        0% {
+          transform: translateY(1.6rem);
+        }
+        50% {
+          transform: translateY(0.8rem);
+        }
+        100% {
+          transform: translateY(1.6rem);
+        }
+      }
+      .cardright {
+        position: absolute;
+        width: 24.287rem;
+        height: 36.3rem;
+        left: 17.7rem;
+        top: 0rem;
+        animation: cardrightpulse 2s ease-in infinite;
+      }
+      @keyframes cardrightpulse {
+        0% {
+          transform: translateY(-1.2rem);
+        }
+        50% {
+          transform: translateY(0.5rem);
+        }
+        100% {
+          transform: translateY(-1.2rem);
+        }
+      }
+    }
+  }
+}

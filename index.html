@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- Scripts JS -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="./js/main.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +22,84 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Primary Meta Tags -->
+    <title>Redesign Nubank</title>
+    <meta name="title" content="Redesign Nubank" />
+    <meta
+      name="description"
+      content="Projeto de estudo, redesign nubank, front-end desenvolvido por Afio Vinicius e o UI Design criado por Lucas Santana."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rdnubank.netlify.app/" />
+    <meta property="og:title" content="Redesign Nubank" />
+    <meta
+      property="og:description"
+      content="Projeto de estudo, redesign nubank, front-end desenvolvido por Afio Vinicius e o UI Design criado por Lucas Santana."
+    />
+    <meta property="og:image" content="./screenshot.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rdnubank.netlify.app/" />
+    <meta property="twitter:title" content="Redesign Nubank" />
+    <meta
+      property="twitter:description"
+      content="Projeto de estudo, redesign nubank, front-end desenvolvido por Afio Vinicius e o UI Design criado por Lucas Santana."
+    />
+    <meta property="twitter:image" content="./screenshot.png" />
   </head>
-  <body></body>
+  <body>
+    <header class="ef-i-down">
+      <div class="container">
+        <ul>
+          <li><a href="/">Página inicial</a></li>
+          <li><a href="/">Para você</a></li>
+          <li><a href="/">Para o seu negócio</a></li>
+        </ul>
+        <a href="/" class="logo">
+          <img src="./assets/logo.svg" alt="Logo Nubank" />
+        </a>
+        <ul>
+          <li><a href="/">O Nubank</a></li>
+          <li><a href="/">Perguntas</a></li>
+        </ul>
+        <a href="/" class="btn"
+          >Fazer login
+          <img
+            src="./assets/icon_arrow_cricle.svg"
+            alt="Icone seta"
+            class="icon"
+        /></a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="text">
+          <h1 class="ef-i-right">
+            O futuro é a razão que a gente faz <b>planos.</b>
+          </h1>
+          <h4 class="ef-i-right">
+            Escolha o futuro. Comece a controlar melhor sua vida financeira com
+            o Nubank.
+          </h4>
+        </div>
+        <div class="illust ef-i-left">
+          <img
+            src="./assets/card_left.png"
+            alt="Cartão da esquerda"
+            class="cardleft"
+            loading="lazy"
+          />
+          <img
+            src="./assets/card_right.png"
+            alt="Cartão da direita"
+            class="cardright"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

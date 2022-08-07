@@ -1,0 +1,73 @@
+/* Índice
+
+  1 - Reset Global
+  1.1 - Mixins
+  2 - Html e Body
+  3 - Imagens
+  4 - Container
+
+*/
+
+// 1 - Reset Global
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: "DM Sans", sans-serif;
+}
+
+// 1.1 - Mixins
+@mixin responsive($maxwidth) {
+  @media (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin flex($direction, $wrap, $align, $justify) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// 2 - Html e Body
+html,
+body {
+  overflow: hidden;
+  height: 100vh;
+  font-size: 62.5%;
+  background: #faf5ff url(../assets/bg.png) no-repeat center center/cover;
+  // Scroll Style
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #820ad1 transparent;
+  &::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #820ad1;
+    border-radius: 2rem;
+  }
+  a,
+  button {
+    cursor: pointer;
+  }
+}
+
+// 3 - Imagens
+img {
+  display: block;
+  width: 100%;
+}
+
+// 4 - Container
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 121.6rem;
+}
